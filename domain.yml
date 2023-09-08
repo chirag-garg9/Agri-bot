@@ -1,0 +1,765 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - Inquire_schemes
+  - scheme_name
+  - Asking_Who_are_you
+  - Asking_capabilities
+  - asking_schemes
+  - greatful
+
+actions:
+  - Scheme_details
+
+slots:
+  scheme_name:
+    type: categorical
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: scheme_name 
+
+entities:
+  - scheme_name
+
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  - text: Hi there! How's it going?
+  - text: Hello! What's up?
+  - text: Hey, what's new?
+  - text: Hi! How have you been?
+  - text: Hello there! How are things?
+  - text: Hey, how's life treating you?
+  - text: Hi, how's your day been?
+  - text: Hello! How's everything going for you?
+  - text: Hey, how's your day shaping up?
+  - text: Hi there! How are you feeling today?
+  - text: Hey! What's the latest with you?
+  - text: Hi! How's your week going?
+  - text: Hello, how's your day going so far?
+  - text: Hey, how are things in your world?
+  - text: Hi there! What's the good word?
+  - text: Hello! How's your mood today?
+  - text: Hey, how's your energy today?
+  - text: Hi! How's the day treating you?
+  - text: Hello there! How's your well-being?
+
+  utter_about_itself:
+  - text: Hello, I'm a chatbot specializing in government agricultural schemes information.
+  - text: Hi there! I'm here to assist you with details about government agricultural programs.
+  - text: Greetings! I'm a chatbot dedicated to government agricultural schemes.
+  - text: Hey, I'm a chatbot designed to provide info on government agricultural initiatives.
+  - text: Hi! I'm here to help with information on government agricultural schemes.
+  - text: Good day! I'm a chatbot focused on government agricultural programs.
+  - text: Hello, I'm an agricultural schemes chatbot created by the government.
+  - text: Hi there! I specialize in government agricultural scheme information.
+  - text: Greetings! I'm your go-to chatbot for government agricultural programs.
+  - text: Hey, I'm here to assist you with government agricultural scheme details.
+  - text: Hi! I'm a chatbot designed to share knowledge about government agricultural initiatives.
+  - text: Good day! I'm a chatbot with expertise in government agricultural schemes.
+  - text: Hello, I'm your source for government agricultural program information.
+  - text: Hi there! I'm a chatbot dedicated to government agricultural schemes.
+  - text: Greetings! I'm here to provide insights into government agricultural initiatives.
+  - text: Hey, I'm your agricultural schemes chatbot for government offerings.
+  - text: Hi! I'm specialized in government agricultural program details.
+  - text: Good day! I'm a chatbot designed to inform you about government agricultural schemes.
+  - text: Hello, I'm here to help you navigate government agricultural initiatives.
+  - text: Hi there! I'm a chatbot committed to government agricultural scheme information.
+
+  utter_What_can_i_do:
+  - text: I'm here to offer information on agricultural schemes.
+  - text:  You can count on me for details about agricultural programs.
+  - text: I'm available to share insights into agricultural initiatives.
+  - text: I possess knowledge about agricultural schemes that I can share with you.
+  - text: I have the information you need about agricultural programs.
+  - text: Feel free to ask me about agricultural schemes; I have the answers.
+  - text: Providing information on agricultural initiatives is within my capabilities.
+  - text: I'm capable of giving you information about agricultural schemes.
+  - text: I'm well-equipped to offer information about agricultural programs.
+  - text: I'm here to provide you with the scoop on agricultural initiatives.
+  - text: I can supply you with information about agricultural schemes.
+  - text: I'm your source for information about agricultural programs.
+  - text: If you need details on agricultural initiatives, I'm here to help.
+  - text: Sharing information about agricultural schemes is what I do.
+  - text: I have the expertise to provide information about agricultural programs.
+  - text: I'm ready to provide you with information about agricultural initiatives.
+  - text: You're in the right place for information on agricultural schemes.
+  - text: Information about agricultural programs is at your disposal with me.
+  - text: I'm here to assist with your questions about agricultural initiatives.
+  - text: Providing information about agricultural schemes is my specialty.
+  - text: These variations can be used to convey your ability to provide information about agricultural schemes in different ways, depending on the context or your preferred style of communication.
+
+  utter_Schemes:
+  - text: These agricultural schemes are offered.
+    buttons:
+      - title: "Agri Infrastructure Fund Scheme AIF- Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Agri Infrastructure Fund Scheme AIF- Scheme\"}}"
+      - title: "Animal Husbandry Infrastructure Development Fund AHIDF"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Animal Husbandry Infrastructure Development Fund AHIDF\"}}"
+      - title: "PM Formalization of Micro Food Processing Enterprises PMFME Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM Formalization of Micro Food Processing Enterprises PMFME Scheme\"}}"
+      - title: "PM U+2013 KUSUM Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM U+2013 KUSUM Scheme\"}}"
+      - title: "Deendayal Antyodaya Yojana- National Urban Livelihoods Mission DAY- NULM"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Deendayal Antyodaya Yojana- National Urban Livelihoods Mission DAY- NULM2\"}}"
+      - title: "Prime Minister’s Employment Generation Programme PMEGP"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Prime Minister’s Employment Generation Programme PMEGP\"}}"
+      - title: "Pradhan Mantri Krishi Sinchai Yojana PMKSY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Pradhan Mantri Krishi Sinchai Yojana PMKSY\"}}"
+      - title: "Paramparagat Krishi Vikas Yojana PKVY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Paramparagat Krishi Vikas Yojana PKVY\"}}"
+      - title: "Pradhan Mantri Fasal Bima Yojana PMFBY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Pradhan Mantri Fasal Bima Yojana PMFBY\"}}"
+      - title: "Gramin Bhandaran Yojana"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Gramin Bhandaran Yojana\"}}"
+      - title: "PM Kisan Samman Nidhi Yojana"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM Kisan Samman Nidhi Yojana\"}}"
+      - title: "Micro Irrigation Fund scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Micro Irrigation Fund scheme\"}}"
+      - title: "E-NAM"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"E-NAM\"}}"
+      - title: "Kisan Credit Card KCC"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Kisan Credit Card KCC\"}}"
+      - title: "National Mission For Sustainable Agriculture NMSA"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"National Mission For Sustainable Agriculture NMSA\"}}"
+  - text:  Here are the provided agricultural programs.
+    buttons:
+      - title: "Agri Infrastructure Fund Scheme AIF- Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Agri Infrastructure Fund Scheme AIF- Scheme\"}}"
+      - title: "Animal Husbandry Infrastructure Development Fund AHIDF"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Animal Husbandry Infrastructure Development Fund AHIDF\"}}"
+      - title: "PM Formalization of Micro Food Processing Enterprises PMFME Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM Formalization of Micro Food Processing Enterprises PMFME Scheme\"}}"
+      - title: "PM U+2013 KUSUM Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM U+2013 KUSUM Scheme\"}}"
+      - title: "Deendayal Antyodaya Yojana- National Urban Livelihoods Mission DAY- NULM"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Deendayal Antyodaya Yojana- National Urban Livelihoods Mission DAY- NULM2\"}}"
+      - title: "Prime Minister’s Employment Generation Programme PMEGP"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Prime Minister’s Employment Generation Programme PMEGP\"}}"
+      - title: "Pradhan Mantri Krishi Sinchai Yojana PMKSY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Pradhan Mantri Krishi Sinchai Yojana PMKSY\"}}"
+      - title: "Paramparagat Krishi Vikas Yojana PKVY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Paramparagat Krishi Vikas Yojana PKVY\"}}"
+      - title: "Pradhan Mantri Fasal Bima Yojana PMFBY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Pradhan Mantri Fasal Bima Yojana PMFBY\"}}"
+      - title: "Gramin Bhandaran Yojana"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Gramin Bhandaran Yojana\"}}"
+      - title: "PM Kisan Samman Nidhi Yojana"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM Kisan Samman Nidhi Yojana\"}}"
+      - title: "Micro Irrigation Fund scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Micro Irrigation Fund scheme\"}}"
+      - title: "E-NAM"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"E-NAM\"}}"
+      - title: "Kisan Credit Card KCC"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Kisan Credit Card KCC\"}}"
+      - title: "National Mission For Sustainable Agriculture NMSA"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"National Mission For Sustainable Agriculture NMSA\"}}"
+  - text:  The following are the available agricultural initiatives.
+    buttons:
+      - title: "Agri Infrastructure Fund Scheme AIF- Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Agri Infrastructure Fund Scheme AIF- Scheme\"}}"
+      - title: "Animal Husbandry Infrastructure Development Fund AHIDF"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Animal Husbandry Infrastructure Development Fund AHIDF\"}}"
+      - title: "PM Formalization of Micro Food Processing Enterprises PMFME Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM Formalization of Micro Food Processing Enterprises PMFME Scheme\"}}"
+      - title: "PM U+2013 KUSUM Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM U+2013 KUSUM Scheme\"}}"
+      - title: "Deendayal Antyodaya Yojana- National Urban Livelihoods Mission DAY- NULM"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Deendayal Antyodaya Yojana- National Urban Livelihoods Mission DAY- NULM2\"}}"
+      - title: "Prime Minister’s Employment Generation Programme PMEGP"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Prime Minister’s Employment Generation Programme PMEGP\"}}"
+      - title: "Pradhan Mantri Krishi Sinchai Yojana PMKSY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Pradhan Mantri Krishi Sinchai Yojana PMKSY\"}}"
+      - title: "Paramparagat Krishi Vikas Yojana PKVY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Paramparagat Krishi Vikas Yojana PKVY\"}}"
+      - title: "Pradhan Mantri Fasal Bima Yojana PMFBY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Pradhan Mantri Fasal Bima Yojana PMFBY\"}}"
+      - title: "Gramin Bhandaran Yojana"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Gramin Bhandaran Yojana\"}}"
+      - title: "PM Kisan Samman Nidhi Yojana"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM Kisan Samman Nidhi Yojana\"}}"
+      - title: "Micro Irrigation Fund scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Micro Irrigation Fund scheme\"}}"
+      - title: "E-NAM"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"E-NAM\"}}"
+      - title: "Kisan Credit Card KCC"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Kisan Credit Card KCC\"}}"
+      - title: "National Mission For Sustainable Agriculture NMSA"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"National Mission For Sustainable Agriculture NMSA\"}}"
+  - text:  These are the agricultural projects on offer.
+    buttons:
+      - title: "Agri Infrastructure Fund Scheme AIF- Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Agri Infrastructure Fund Scheme AIF- Scheme\"}}"
+      - title: "Animal Husbandry Infrastructure Development Fund AHIDF"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Animal Husbandry Infrastructure Development Fund AHIDF\"}}"
+      - title: "PM Formalization of Micro Food Processing Enterprises PMFME Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM Formalization of Micro Food Processing Enterprises PMFME Scheme\"}}"
+      - title: "PM U+2013 KUSUM Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM U+2013 KUSUM Scheme\"}}"
+      - title: "Deendayal Antyodaya Yojana- National Urban Livelihoods Mission DAY- NULM"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Deendayal Antyodaya Yojana- National Urban Livelihoods Mission DAY- NULM2\"}}"
+      - title: "Prime Minister’s Employment Generation Programme PMEGP"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Prime Minister’s Employment Generation Programme PMEGP\"}}"
+      - title: "Pradhan Mantri Krishi Sinchai Yojana PMKSY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Pradhan Mantri Krishi Sinchai Yojana PMKSY\"}}"
+      - title: "Paramparagat Krishi Vikas Yojana PKVY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Paramparagat Krishi Vikas Yojana PKVY\"}}"
+      - title: "Pradhan Mantri Fasal Bima Yojana PMFBY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Pradhan Mantri Fasal Bima Yojana PMFBY\"}}"
+      - title: "Gramin Bhandaran Yojana"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Gramin Bhandaran Yojana\"}}"
+      - title: "PM Kisan Samman Nidhi Yojana"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM Kisan Samman Nidhi Yojana\"}}"
+      - title: "Micro Irrigation Fund scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Micro Irrigation Fund scheme\"}}"
+      - title: "E-NAM"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"E-NAM\"}}"
+      - title: "Kisan Credit Card KCC"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Kisan Credit Card KCC\"}}"
+      - title: "National Mission For Sustainable Agriculture NMSA"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"National Mission For Sustainable Agriculture NMSA\"}}"
+  - text:  Presenting the provided agricultural schemes.
+    buttons:
+      - title: "Agri Infrastructure Fund Scheme AIF- Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Agri Infrastructure Fund Scheme AIF- Scheme\"}}"
+      - title: "Animal Husbandry Infrastructure Development Fund AHIDF"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Animal Husbandry Infrastructure Development Fund AHIDF\"}}"
+      - title: "PM Formalization of Micro Food Processing Enterprises PMFME Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM Formalization of Micro Food Processing Enterprises PMFME Scheme\"}}"
+      - title: "PM U+2013 KUSUM Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM U+2013 KUSUM Scheme\"}}"
+      - title: "Deendayal Antyodaya Yojana- National Urban Livelihoods Mission DAY- NULM"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Deendayal Antyodaya Yojana- National Urban Livelihoods Mission DAY- NULM2\"}}"
+      - title: "Prime Minister’s Employment Generation Programme PMEGP"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Prime Minister’s Employment Generation Programme PMEGP\"}}"
+      - title: "Pradhan Mantri Krishi Sinchai Yojana PMKSY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Pradhan Mantri Krishi Sinchai Yojana PMKSY\"}}"
+      - title: "Paramparagat Krishi Vikas Yojana PKVY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Paramparagat Krishi Vikas Yojana PKVY\"}}"
+      - title: "Pradhan Mantri Fasal Bima Yojana PMFBY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Pradhan Mantri Fasal Bima Yojana PMFBY\"}}"
+      - title: "Gramin Bhandaran Yojana"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Gramin Bhandaran Yojana\"}}"
+      - title: "PM Kisan Samman Nidhi Yojana"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM Kisan Samman Nidhi Yojana\"}}"
+      - title: "Micro Irrigation Fund scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Micro Irrigation Fund scheme\"}}"
+      - title: "E-NAM"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"E-NAM\"}}"
+      - title: "Kisan Credit Card KCC"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Kisan Credit Card KCC\"}}"
+      - title: "National Mission For Sustainable Agriculture NMSA"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"National Mission For Sustainable Agriculture NMSA\"}}"
+  - text:  These agricultural programs are currently available.
+    buttons:
+      - title: "Agri Infrastructure Fund Scheme AIF- Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Agri Infrastructure Fund Scheme AIF- Scheme\"}}"
+      - title: "Animal Husbandry Infrastructure Development Fund AHIDF"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Animal Husbandry Infrastructure Development Fund AHIDF\"}}"
+      - title: "PM Formalization of Micro Food Processing Enterprises PMFME Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM Formalization of Micro Food Processing Enterprises PMFME Scheme\"}}"
+      - title: "PM U+2013 KUSUM Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM U+2013 KUSUM Scheme\"}}"
+      - title: "Deendayal Antyodaya Yojana- National Urban Livelihoods Mission DAY- NULM"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Deendayal Antyodaya Yojana- National Urban Livelihoods Mission DAY- NULM2\"}}"
+      - title: "Prime Minister’s Employment Generation Programme PMEGP"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Prime Minister’s Employment Generation Programme PMEGP\"}}"
+      - title: "Pradhan Mantri Krishi Sinchai Yojana PMKSY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Pradhan Mantri Krishi Sinchai Yojana PMKSY\"}}"
+      - title: "Paramparagat Krishi Vikas Yojana PKVY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Paramparagat Krishi Vikas Yojana PKVY\"}}"
+      - title: "Pradhan Mantri Fasal Bima Yojana PMFBY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Pradhan Mantri Fasal Bima Yojana PMFBY\"}}"
+      - title: "Gramin Bhandaran Yojana"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Gramin Bhandaran Yojana\"}}"
+      - title: "PM Kisan Samman Nidhi Yojana"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM Kisan Samman Nidhi Yojana\"}}"
+      - title: "Micro Irrigation Fund scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Micro Irrigation Fund scheme\"}}"
+      - title: "E-NAM"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"E-NAM\"}}"
+      - title: "Kisan Credit Card KCC"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Kisan Credit Card KCC\"}}"
+      - title: "National Mission For Sustainable Agriculture NMSA"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"National Mission For Sustainable Agriculture NMSA\"}}"
+  - text:  Here's a list of the provided agricultural initiatives.
+    buttons:
+      - title: "Agri Infrastructure Fund Scheme AIF- Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Agri Infrastructure Fund Scheme AIF- Scheme\"}}"
+      - title: "Animal Husbandry Infrastructure Development Fund AHIDF"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Animal Husbandry Infrastructure Development Fund AHIDF\"}}"
+      - title: "PM Formalization of Micro Food Processing Enterprises PMFME Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM Formalization of Micro Food Processing Enterprises PMFME Scheme\"}}"
+      - title: "PM U+2013 KUSUM Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM U+2013 KUSUM Scheme\"}}"
+      - title: "Deendayal Antyodaya Yojana- National Urban Livelihoods Mission DAY- NULM"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Deendayal Antyodaya Yojana- National Urban Livelihoods Mission DAY- NULM2\"}}"
+      - title: "Prime Minister’s Employment Generation Programme PMEGP"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Prime Minister’s Employment Generation Programme PMEGP\"}}"
+      - title: "Pradhan Mantri Krishi Sinchai Yojana PMKSY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Pradhan Mantri Krishi Sinchai Yojana PMKSY\"}}"
+      - title: "Paramparagat Krishi Vikas Yojana PKVY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Paramparagat Krishi Vikas Yojana PKVY\"}}"
+      - title: "Pradhan Mantri Fasal Bima Yojana PMFBY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Pradhan Mantri Fasal Bima Yojana PMFBY\"}}"
+      - title: "Gramin Bhandaran Yojana"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Gramin Bhandaran Yojana\"}}"
+      - title: "PM Kisan Samman Nidhi Yojana"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM Kisan Samman Nidhi Yojana\"}}"
+      - title: "Micro Irrigation Fund scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Micro Irrigation Fund scheme\"}}"
+      - title: "E-NAM"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"E-NAM\"}}"
+      - title: "Kisan Credit Card KCC"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Kisan Credit Card KCC\"}}"
+      - title: "National Mission For Sustainable Agriculture NMSA"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"National Mission For Sustainable Agriculture NMSA\"}}"
+  - text:  The agricultural schemes listed here are offered.
+    buttons:
+      - title: "Agri Infrastructure Fund Scheme AIF- Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Agri Infrastructure Fund Scheme AIF- Scheme\"}}"
+      - title: "Animal Husbandry Infrastructure Development Fund AHIDF"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Animal Husbandry Infrastructure Development Fund AHIDF\"}}"
+      - title: "PM Formalization of Micro Food Processing Enterprises PMFME Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM Formalization of Micro Food Processing Enterprises PMFME Scheme\"}}"
+      - title: "PM U+2013 KUSUM Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM U+2013 KUSUM Scheme\"}}"
+      - title: "Deendayal Antyodaya Yojana- National Urban Livelihoods Mission DAY- NULM"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Deendayal Antyodaya Yojana- National Urban Livelihoods Mission DAY- NULM2\"}}"
+      - title: "Prime Minister’s Employment Generation Programme PMEGP"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Prime Minister’s Employment Generation Programme PMEGP\"}}"
+      - title: "Pradhan Mantri Krishi Sinchai Yojana PMKSY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Pradhan Mantri Krishi Sinchai Yojana PMKSY\"}}"
+      - title: "Paramparagat Krishi Vikas Yojana PKVY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Paramparagat Krishi Vikas Yojana PKVY\"}}"
+      - title: "Pradhan Mantri Fasal Bima Yojana PMFBY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Pradhan Mantri Fasal Bima Yojana PMFBY\"}}"
+      - title: "Gramin Bhandaran Yojana"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Gramin Bhandaran Yojana\"}}"
+      - title: "PM Kisan Samman Nidhi Yojana"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM Kisan Samman Nidhi Yojana\"}}"
+      - title: "Micro Irrigation Fund scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Micro Irrigation Fund scheme\"}}"
+      - title: "E-NAM"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"E-NAM\"}}"
+      - title: "Kisan Credit Card KCC"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Kisan Credit Card KCC\"}}"
+      - title: "National Mission For Sustainable Agriculture NMSA"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"National Mission For Sustainable Agriculture NMSA\"}}"
+  - text:  These are the agricultural projects that are available.
+    buttons:
+      - title: "Agri Infrastructure Fund Scheme AIF- Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Agri Infrastructure Fund Scheme AIF- Scheme\"}}"
+      - title: "Animal Husbandry Infrastructure Development Fund AHIDF"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Animal Husbandry Infrastructure Development Fund AHIDF\"}}"
+      - title: "PM Formalization of Micro Food Processing Enterprises PMFME Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM Formalization of Micro Food Processing Enterprises PMFME Scheme\"}}"
+      - title: "PM U+2013 KUSUM Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM U+2013 KUSUM Scheme\"}}"
+      - title: "Deendayal Antyodaya Yojana- National Urban Livelihoods Mission DAY- NULM"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Deendayal Antyodaya Yojana- National Urban Livelihoods Mission DAY- NULM2\"}}"
+      - title: "Prime Minister’s Employment Generation Programme PMEGP"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Prime Minister’s Employment Generation Programme PMEGP\"}}"
+      - title: "Pradhan Mantri Krishi Sinchai Yojana PMKSY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Pradhan Mantri Krishi Sinchai Yojana PMKSY\"}}"
+      - title: "Paramparagat Krishi Vikas Yojana PKVY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Paramparagat Krishi Vikas Yojana PKVY\"}}"
+      - title: "Pradhan Mantri Fasal Bima Yojana PMFBY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Pradhan Mantri Fasal Bima Yojana PMFBY\"}}"
+      - title: "Gramin Bhandaran Yojana"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Gramin Bhandaran Yojana\"}}"
+      - title: "PM Kisan Samman Nidhi Yojana"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM Kisan Samman Nidhi Yojana\"}}"
+      - title: "Micro Irrigation Fund scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Micro Irrigation Fund scheme\"}}"
+      - title: "E-NAM"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"E-NAM\"}}"
+      - title: "Kisan Credit Card KCC"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Kisan Credit Card KCC\"}}"
+      - title: "National Mission For Sustainable Agriculture NMSA"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"National Mission For Sustainable Agriculture NMSA\"}}"
+  - text:  Below is a compilation of the provided agricultural programs.
+    buttons:
+      - title: "Agri Infrastructure Fund Scheme AIF- Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Agri Infrastructure Fund Scheme AIF- Scheme\"}}"
+      - title: "Animal Husbandry Infrastructure Development Fund AHIDF"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Animal Husbandry Infrastructure Development Fund AHIDF\"}}"
+      - title: "PM Formalization of Micro Food Processing Enterprises PMFME Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM Formalization of Micro Food Processing Enterprises PMFME Scheme\"}}"
+      - title: "PM U+2013 KUSUM Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM U+2013 KUSUM Scheme\"}}"
+      - title: "Deendayal Antyodaya Yojana- National Urban Livelihoods Mission DAY- NULM"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Deendayal Antyodaya Yojana- National Urban Livelihoods Mission DAY- NULM2\"}}"
+      - title: "Prime Minister’s Employment Generation Programme PMEGP"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Prime Minister’s Employment Generation Programme PMEGP\"}}"
+      - title: "Pradhan Mantri Krishi Sinchai Yojana PMKSY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Pradhan Mantri Krishi Sinchai Yojana PMKSY\"}}"
+      - title: "Paramparagat Krishi Vikas Yojana PKVY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Paramparagat Krishi Vikas Yojana PKVY\"}}"
+      - title: "Pradhan Mantri Fasal Bima Yojana PMFBY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Pradhan Mantri Fasal Bima Yojana PMFBY\"}}"
+      - title: "Gramin Bhandaran Yojana"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Gramin Bhandaran Yojana\"}}"
+      - title: "PM Kisan Samman Nidhi Yojana"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM Kisan Samman Nidhi Yojana\"}}"
+      - title: "Micro Irrigation Fund scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Micro Irrigation Fund scheme\"}}"
+      - title: "E-NAM"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"E-NAM\"}}"
+      - title: "Kisan Credit Card KCC"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Kisan Credit Card KCC\"}}"
+      - title: "National Mission For Sustainable Agriculture NMSA"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"National Mission For Sustainable Agriculture NMSA\"}}"
+  - text:  The following agricultural initiatives are being offered.
+    buttons:
+      - title: "Agri Infrastructure Fund Scheme AIF- Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Agri Infrastructure Fund Scheme AIF- Scheme\"}}"
+      - title: "Animal Husbandry Infrastructure Development Fund AHIDF"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Animal Husbandry Infrastructure Development Fund AHIDF\"}}"
+      - title: "PM Formalization of Micro Food Processing Enterprises PMFME Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM Formalization of Micro Food Processing Enterprises PMFME Scheme\"}}"
+      - title: "PM U+2013 KUSUM Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM U+2013 KUSUM Scheme\"}}"
+      - title: "Deendayal Antyodaya Yojana- National Urban Livelihoods Mission DAY- NULM"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Deendayal Antyodaya Yojana- National Urban Livelihoods Mission DAY- NULM2\"}}"
+      - title: "Prime Minister’s Employment Generation Programme PMEGP"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Prime Minister’s Employment Generation Programme PMEGP\"}}"
+      - title: "Pradhan Mantri Krishi Sinchai Yojana PMKSY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Pradhan Mantri Krishi Sinchai Yojana PMKSY\"}}"
+      - title: "Paramparagat Krishi Vikas Yojana PKVY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Paramparagat Krishi Vikas Yojana PKVY\"}}"
+      - title: "Pradhan Mantri Fasal Bima Yojana PMFBY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Pradhan Mantri Fasal Bima Yojana PMFBY\"}}"
+      - title: "Gramin Bhandaran Yojana"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Gramin Bhandaran Yojana\"}}"
+      - title: "PM Kisan Samman Nidhi Yojana"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM Kisan Samman Nidhi Yojana\"}}"
+      - title: "Micro Irrigation Fund scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Micro Irrigation Fund scheme\"}}"
+      - title: "E-NAM"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"E-NAM\"}}"
+      - title: "Kisan Credit Card KCC"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Kisan Credit Card KCC\"}}"
+      - title: "National Mission For Sustainable Agriculture NMSA"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"National Mission For Sustainable Agriculture NMSA\"}}"
+  - text:  Take a look at the available agricultural schemes.
+    buttons:
+      - title: "Agri Infrastructure Fund Scheme AIF- Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Agri Infrastructure Fund Scheme AIF- Scheme\"}}"
+      - title: "Animal Husbandry Infrastructure Development Fund AHIDF"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Animal Husbandry Infrastructure Development Fund AHIDF\"}}"
+      - title: "PM Formalization of Micro Food Processing Enterprises PMFME Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM Formalization of Micro Food Processing Enterprises PMFME Scheme\"}}"
+      - title: "PM U+2013 KUSUM Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM U+2013 KUSUM Scheme\"}}"
+      - title: "Deendayal Antyodaya Yojana- National Urban Livelihoods Mission DAY- NULM"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Deendayal Antyodaya Yojana- National Urban Livelihoods Mission DAY- NULM2\"}}"
+      - title: "Prime Minister’s Employment Generation Programme PMEGP"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Prime Minister’s Employment Generation Programme PMEGP\"}}"
+      - title: "Pradhan Mantri Krishi Sinchai Yojana PMKSY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Pradhan Mantri Krishi Sinchai Yojana PMKSY\"}}"
+      - title: "Paramparagat Krishi Vikas Yojana PKVY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Paramparagat Krishi Vikas Yojana PKVY\"}}"
+      - title: "Pradhan Mantri Fasal Bima Yojana PMFBY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Pradhan Mantri Fasal Bima Yojana PMFBY\"}}"
+      - title: "Gramin Bhandaran Yojana"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Gramin Bhandaran Yojana\"}}"
+      - title: "PM Kisan Samman Nidhi Yojana"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM Kisan Samman Nidhi Yojana\"}}"
+      - title: "Micro Irrigation Fund scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Micro Irrigation Fund scheme\"}}"
+      - title: "E-NAM"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"E-NAM\"}}"
+      - title: "Kisan Credit Card KCC"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Kisan Credit Card KCC\"}}"
+      - title: "National Mission For Sustainable Agriculture NMSA"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"National Mission For Sustainable Agriculture NMSA\"}}"
+  - text:  These agricultural programs are at your disposal.
+    buttons:
+      - title: "Agri Infrastructure Fund Scheme AIF- Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Agri Infrastructure Fund Scheme AIF- Scheme\"}}"
+      - title: "Animal Husbandry Infrastructure Development Fund AHIDF"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Animal Husbandry Infrastructure Development Fund AHIDF\"}}"
+      - title: "PM Formalization of Micro Food Processing Enterprises PMFME Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM Formalization of Micro Food Processing Enterprises PMFME Scheme\"}}"
+      - title: "PM U+2013 KUSUM Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM U+2013 KUSUM Scheme\"}}"
+      - title: "Deendayal Antyodaya Yojana- National Urban Livelihoods Mission DAY- NULM"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Deendayal Antyodaya Yojana- National Urban Livelihoods Mission DAY- NULM2\"}}"
+      - title: "Prime Minister’s Employment Generation Programme PMEGP"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Prime Minister’s Employment Generation Programme PMEGP\"}}"
+      - title: "Pradhan Mantri Krishi Sinchai Yojana PMKSY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Pradhan Mantri Krishi Sinchai Yojana PMKSY\"}}"
+      - title: "Paramparagat Krishi Vikas Yojana PKVY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Paramparagat Krishi Vikas Yojana PKVY\"}}"
+      - title: "Pradhan Mantri Fasal Bima Yojana PMFBY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Pradhan Mantri Fasal Bima Yojana PMFBY\"}}"
+      - title: "Gramin Bhandaran Yojana"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Gramin Bhandaran Yojana\"}}"
+      - title: "PM Kisan Samman Nidhi Yojana"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM Kisan Samman Nidhi Yojana\"}}"
+      - title: "Micro Irrigation Fund scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Micro Irrigation Fund scheme\"}}"
+      - title: "E-NAM"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"E-NAM\"}}"
+      - title: "Kisan Credit Card KCC"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Kisan Credit Card KCC\"}}"
+      - title: "National Mission For Sustainable Agriculture NMSA"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"National Mission For Sustainable Agriculture NMSA\"}}"
+  - text:  Here's an overview of the provided agricultural projects.
+    buttons:
+      - title: "Agri Infrastructure Fund Scheme AIF- Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Agri Infrastructure Fund Scheme AIF- Scheme\"}}"
+      - title: "Animal Husbandry Infrastructure Development Fund AHIDF"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Animal Husbandry Infrastructure Development Fund AHIDF\"}}"
+      - title: "PM Formalization of Micro Food Processing Enterprises PMFME Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM Formalization of Micro Food Processing Enterprises PMFME Scheme\"}}"
+      - title: "PM U+2013 KUSUM Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM U+2013 KUSUM Scheme\"}}"
+      - title: "Deendayal Antyodaya Yojana- National Urban Livelihoods Mission DAY- NULM"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Deendayal Antyodaya Yojana- National Urban Livelihoods Mission DAY- NULM2\"}}"
+      - title: "Prime Minister’s Employment Generation Programme PMEGP"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Prime Minister’s Employment Generation Programme PMEGP\"}}"
+      - title: "Pradhan Mantri Krishi Sinchai Yojana PMKSY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Pradhan Mantri Krishi Sinchai Yojana PMKSY\"}}"
+      - title: "Paramparagat Krishi Vikas Yojana PKVY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Paramparagat Krishi Vikas Yojana PKVY\"}}"
+      - title: "Pradhan Mantri Fasal Bima Yojana PMFBY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Pradhan Mantri Fasal Bima Yojana PMFBY\"}}"
+      - title: "Gramin Bhandaran Yojana"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Gramin Bhandaran Yojana\"}}"
+      - title: "PM Kisan Samman Nidhi Yojana"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM Kisan Samman Nidhi Yojana\"}}"
+      - title: "Micro Irrigation Fund scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Micro Irrigation Fund scheme\"}}"
+      - title: "E-NAM"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"E-NAM\"}}"
+      - title: "Kisan Credit Card KCC"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Kisan Credit Card KCC\"}}"
+      - title: "National Mission For Sustainable Agriculture NMSA"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"National Mission For Sustainable Agriculture NMSA\"}}"
+  - text:  This is the roster of agricultural initiatives provided.
+    buttons:
+      - title: "Agri Infrastructure Fund Scheme AIF- Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Agri Infrastructure Fund Scheme AIF- Scheme\"}}"
+      - title: "Animal Husbandry Infrastructure Development Fund AHIDF"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Animal Husbandry Infrastructure Development Fund AHIDF\"}}"
+      - title: "PM Formalization of Micro Food Processing Enterprises PMFME Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM Formalization of Micro Food Processing Enterprises PMFME Scheme\"}}"
+      - title: "PM U+2013 KUSUM Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM U+2013 KUSUM Scheme\"}}"
+      - title: "Deendayal Antyodaya Yojana- National Urban Livelihoods Mission DAY- NULM"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Deendayal Antyodaya Yojana- National Urban Livelihoods Mission DAY- NULM2\"}}"
+      - title: "Prime Minister’s Employment Generation Programme PMEGP"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Prime Minister’s Employment Generation Programme PMEGP\"}}"
+      - title: "Pradhan Mantri Krishi Sinchai Yojana PMKSY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Pradhan Mantri Krishi Sinchai Yojana PMKSY\"}}"
+      - title: "Paramparagat Krishi Vikas Yojana PKVY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Paramparagat Krishi Vikas Yojana PKVY\"}}"
+      - title: "Pradhan Mantri Fasal Bima Yojana PMFBY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Pradhan Mantri Fasal Bima Yojana PMFBY\"}}"
+      - title: "Gramin Bhandaran Yojana"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Gramin Bhandaran Yojana\"}}"
+      - title: "PM Kisan Samman Nidhi Yojana"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM Kisan Samman Nidhi Yojana\"}}"
+      - title: "Micro Irrigation Fund scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Micro Irrigation Fund scheme\"}}"
+      - title: "E-NAM"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"E-NAM\"}}"
+      - title: "Kisan Credit Card KCC"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Kisan Credit Card KCC\"}}"
+      - title: "National Mission For Sustainable Agriculture NMSA"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"National Mission For Sustainable Agriculture NMSA\"}}"
+  - text:  These are the agricultural schemes currently in place.
+    buttons:
+      - title: "Agri Infrastructure Fund Scheme AIF- Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Agri Infrastructure Fund Scheme AIF- Scheme\"}}"
+      - title: "Animal Husbandry Infrastructure Development Fund AHIDF"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Animal Husbandry Infrastructure Development Fund AHIDF\"}}"
+      - title: "PM Formalization of Micro Food Processing Enterprises PMFME Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM Formalization of Micro Food Processing Enterprises PMFME Scheme\"}}"
+      - title: "PM U+2013 KUSUM Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM U+2013 KUSUM Scheme\"}}"
+      - title: "Deendayal Antyodaya Yojana- National Urban Livelihoods Mission DAY- NULM"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Deendayal Antyodaya Yojana- National Urban Livelihoods Mission DAY- NULM2\"}}"
+      - title: "Prime Minister’s Employment Generation Programme PMEGP"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Prime Minister’s Employment Generation Programme PMEGP\"}}"
+      - title: "Pradhan Mantri Krishi Sinchai Yojana PMKSY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Pradhan Mantri Krishi Sinchai Yojana PMKSY\"}}"
+      - title: "Paramparagat Krishi Vikas Yojana PKVY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Paramparagat Krishi Vikas Yojana PKVY\"}}"
+      - title: "Pradhan Mantri Fasal Bima Yojana PMFBY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Pradhan Mantri Fasal Bima Yojana PMFBY\"}}"
+      - title: "Gramin Bhandaran Yojana"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Gramin Bhandaran Yojana\"}}"
+      - title: "PM Kisan Samman Nidhi Yojana"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM Kisan Samman Nidhi Yojana\"}}"
+      - title: "Micro Irrigation Fund scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Micro Irrigation Fund scheme\"}}"
+      - title: "E-NAM"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"E-NAM\"}}"
+      - title: "Kisan Credit Card KCC"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Kisan Credit Card KCC\"}}"
+      - title: "National Mission For Sustainable Agriculture NMSA"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"National Mission For Sustainable Agriculture NMSA\"}}"
+  - text:  The provided agricultural programs are as follows.
+    buttons:
+      - title: "Agri Infrastructure Fund Scheme AIF- Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Agri Infrastructure Fund Scheme AIF- Scheme\"}}"
+      - title: "Animal Husbandry Infrastructure Development Fund AHIDF"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Animal Husbandry Infrastructure Development Fund AHIDF\"}}"
+      - title: "PM Formalization of Micro Food Processing Enterprises PMFME Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM Formalization of Micro Food Processing Enterprises PMFME Scheme\"}}"
+      - title: "PM U+2013 KUSUM Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM U+2013 KUSUM Scheme\"}}"
+      - title: "Deendayal Antyodaya Yojana- National Urban Livelihoods Mission DAY- NULM"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Deendayal Antyodaya Yojana- National Urban Livelihoods Mission DAY- NULM2\"}}"
+      - title: "Prime Minister’s Employment Generation Programme PMEGP"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Prime Minister’s Employment Generation Programme PMEGP\"}}"
+      - title: "Pradhan Mantri Krishi Sinchai Yojana PMKSY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Pradhan Mantri Krishi Sinchai Yojana PMKSY\"}}"
+      - title: "Paramparagat Krishi Vikas Yojana PKVY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Paramparagat Krishi Vikas Yojana PKVY\"}}"
+      - title: "Pradhan Mantri Fasal Bima Yojana PMFBY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Pradhan Mantri Fasal Bima Yojana PMFBY\"}}"
+      - title: "Gramin Bhandaran Yojana"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Gramin Bhandaran Yojana\"}}"
+      - title: "PM Kisan Samman Nidhi Yojana"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM Kisan Samman Nidhi Yojana\"}}"
+      - title: "Micro Irrigation Fund scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Micro Irrigation Fund scheme\"}}"
+      - title: "E-NAM"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"E-NAM\"}}"
+      - title: "Kisan Credit Card KCC"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Kisan Credit Card KCC\"}}"
+      - title: "National Mission For Sustainable Agriculture NMSA"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"National Mission For Sustainable Agriculture NMSA\"}}"
+  - text:  The agricultural initiatives listed here are available.
+    buttons:
+      - title: "Agri Infrastructure Fund Scheme AIF- Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Agri Infrastructure Fund Scheme AIF- Scheme\"}}"
+      - title: "Animal Husbandry Infrastructure Development Fund AHIDF"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Animal Husbandry Infrastructure Development Fund AHIDF\"}}"
+      - title: "PM Formalization of Micro Food Processing Enterprises PMFME Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM Formalization of Micro Food Processing Enterprises PMFME Scheme\"}}"
+      - title: "PM U+2013 KUSUM Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM U+2013 KUSUM Scheme\"}}"
+      - title: "Deendayal Antyodaya Yojana- National Urban Livelihoods Mission DAY- NULM"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Deendayal Antyodaya Yojana- National Urban Livelihoods Mission DAY- NULM2\"}}"
+      - title: "Prime Minister’s Employment Generation Programme PMEGP"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Prime Minister’s Employment Generation Programme PMEGP\"}}"
+      - title: "Pradhan Mantri Krishi Sinchai Yojana PMKSY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Pradhan Mantri Krishi Sinchai Yojana PMKSY\"}}"
+      - title: "Paramparagat Krishi Vikas Yojana PKVY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Paramparagat Krishi Vikas Yojana PKVY\"}}"
+      - title: "Pradhan Mantri Fasal Bima Yojana PMFBY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Pradhan Mantri Fasal Bima Yojana PMFBY\"}}"
+      - title: "Gramin Bhandaran Yojana"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Gramin Bhandaran Yojana\"}}"
+      - title: "PM Kisan Samman Nidhi Yojana"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM Kisan Samman Nidhi Yojana\"}}"
+      - title: "Micro Irrigation Fund scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Micro Irrigation Fund scheme\"}}"
+      - title: "E-NAM"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"E-NAM\"}}"
+      - title: "Kisan Credit Card KCC"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Kisan Credit Card KCC\"}}"
+      - title: "National Mission For Sustainable Agriculture NMSA"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"National Mission For Sustainable Agriculture NMSA\"}}"
+  - text:  These agricultural projects are part of the offerings.
+    buttons:
+      - title: "Agri Infrastructure Fund Scheme AIF- Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Agri Infrastructure Fund Scheme AIF- Scheme\"}}"
+      - title: "Animal Husbandry Infrastructure Development Fund AHIDF"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Animal Husbandry Infrastructure Development Fund AHIDF\"}}"
+      - title: "PM Formalization of Micro Food Processing Enterprises PMFME Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM Formalization of Micro Food Processing Enterprises PMFME Scheme\"}}"
+      - title: "PM U+2013 KUSUM Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM U+2013 KUSUM Scheme\"}}"
+      - title: "Deendayal Antyodaya Yojana- National Urban Livelihoods Mission DAY- NULM"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Deendayal Antyodaya Yojana- National Urban Livelihoods Mission DAY- NULM2\"}}"
+      - title: "Prime Minister’s Employment Generation Programme PMEGP"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Prime Minister’s Employment Generation Programme PMEGP\"}}"
+      - title: "Pradhan Mantri Krishi Sinchai Yojana PMKSY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Pradhan Mantri Krishi Sinchai Yojana PMKSY\"}}"
+      - title: "Paramparagat Krishi Vikas Yojana PKVY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Paramparagat Krishi Vikas Yojana PKVY\"}}"
+      - title: "Pradhan Mantri Fasal Bima Yojana PMFBY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Pradhan Mantri Fasal Bima Yojana PMFBY\"}}"
+      - title: "Gramin Bhandaran Yojana"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Gramin Bhandaran Yojana\"}}"
+      - title: "PM Kisan Samman Nidhi Yojana"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM Kisan Samman Nidhi Yojana\"}}"
+      - title: "Micro Irrigation Fund scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Micro Irrigation Fund scheme\"}}"
+      - title: "E-NAM"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"E-NAM\"}}"
+      - title: "Kisan Credit Card KCC"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Kisan Credit Card KCC\"}}"
+      - title: "National Mission For Sustainable Agriculture NMSA"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"National Mission For Sustainable Agriculture NMSA\"}}"
+  - text:  Here's a rundown of the provided agricultural programs.
+    buttons:
+      - title: "Agri Infrastructure Fund Scheme AIF- Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Agri Infrastructure Fund Scheme AIF- Scheme\"}}"
+      - title: "Animal Husbandry Infrastructure Development Fund AHIDF"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Animal Husbandry Infrastructure Development Fund AHIDF\"}}"
+      - title: "PM Formalization of Micro Food Processing Enterprises PMFME Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM Formalization of Micro Food Processing Enterprises PMFME Scheme\"}}"
+      - title: "PM U+2013 KUSUM Scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM U+2013 KUSUM Scheme\"}}"
+      - title: "Deendayal Antyodaya Yojana- National Urban Livelihoods Mission DAY- NULM"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Deendayal Antyodaya Yojana- National Urban Livelihoods Mission DAY- NULM2\"}}"
+      - title: "Prime Minister’s Employment Generation Programme PMEGP"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Prime Minister’s Employment Generation Programme PMEGP\"}}"
+      - title: "Pradhan Mantri Krishi Sinchai Yojana PMKSY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Pradhan Mantri Krishi Sinchai Yojana PMKSY\"}}"
+      - title: "Paramparagat Krishi Vikas Yojana PKVY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Paramparagat Krishi Vikas Yojana PKVY\"}}"
+      - title: "Pradhan Mantri Fasal Bima Yojana PMFBY"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Pradhan Mantri Fasal Bima Yojana PMFBY\"}}"
+      - title: "Gramin Bhandaran Yojana"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Gramin Bhandaran Yojana\"}}"
+      - title: "PM Kisan Samman Nidhi Yojana"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"PM Kisan Samman Nidhi Yojana\"}}"
+      - title: "Micro Irrigation Fund scheme"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Micro Irrigation Fund scheme\"}}"
+      - title: "E-NAM"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"E-NAM\"}}"
+      - title: "Kisan Credit Card KCC"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"Kisan Credit Card KCC\"}}"
+      - title: "National Mission For Sustainable Agriculture NMSA"
+        payload: "/Inquire_schemes{{\"scheme_name\":\"National Mission For Sustainable Agriculture NMSA\"}}"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_pleasure:
+  - text: I'm here to help. Is there anything else you need assistance with?
+  - text:  Feel free to ask if you have any more questions or need further assistance.
+  - text:  Don't hesitate to reach out if you require any additional help.
+  - text:  I'm at your service. What else can I assist you with?
+  - text:  I'm here to assist you. Is there anything more I can do for you?
+  - text:  If you have any other queries, please don't hesitate to ask.
+  - text:  I'm here to support you. What else can I help you with?
+  - text:  If there's anything else on your mind, just let me know.
+  - text:  I'm happy to assist further. What's next on your list?
+  - text:  Please feel free to ask if you need assistance with anything else.
+  - text:  If you require any more information or help, please reach out.
+  - text:  I'm here to provide assistance. Do you have any other questions?
+  - text:  Is there anything specific you'd like to know or discuss?
+  - text:  Let me know if there's anything else I can assist you with.
+  - text:  What else can I do to help you out?
+  - text:  If you have additional inquiries, I'm here to answer them.
+  - text:  I'm here to assist with anything else you may need.
+  - text:  Don't hesitate to contact me if you require further assistance.
+  - text:  Feel free to let me know how else I can be of service.
+  - text:  I'm here for you. What's the next thing you'd like to explore?
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

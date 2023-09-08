@@ -1,0 +1,44 @@
+**Purpose:**
+The purpose of e-NAM is to modernize and streamline the agricultural marketing system in India by leveraging technology and providing a unified online platform for the buying and selling of agricultural produce. It aims to create a transparent, efficient, and competitive market environment for farmers and traders.
+
+**Objective:**
+1. **Eliminate Intermediaries:** Reduce the involvement of middlemen in agricultural transactions to ensure that farmers receive fair prices for their produce.
+2. **Promote Price Discovery:** Facilitate price discovery based on supply and demand dynamics, leading to better price realization for farmers.
+3. **Expand Market Access:** Enable farmers to sell their produce to buyers beyond their local markets, increasing their market reach.
+4. **Enhance Transparency:** Provide real-time information on prices and arrivals, reducing information asymmetry.
+5. **Ensure Quality Standards:** Encourage the adoption of quality standards and grading, boosting the overall quality of agricultural produce.
+
+**Features:**
+1. **Online Trading Platform:** e-NAM is a web-based platform that allows farmers, traders, and buyers to register and participate in online trading of agricultural commodities.
+2. **Price Information:** It provides daily updates on commodity prices from different markets, helping farmers make informed decisions.
+3. **E-Auction:** Buyers can bid for produce online, and the highest bidder wins the auction.
+4. **Payment Assurance:** e-NAM ensures secure and timely payments to farmers for their sold produce.
+5. **Warehouse Integration:** Some e-NAMs offer integration with accredited warehouses for quality storage and easy access to credit facilities.
+6. **Quality Testing:** Many e-NAMs have quality testing labs to assess the quality of agricultural produce before trading.
+7. **Market Fees and Levies:** Payment of market fees and levies can also be done online through the platform.
+
+**Who Are Eligible?**
+1. **Farmers:** Individual farmers, producer groups, and cooperatives can register on e-NAM to sell their agricultural produce.
+2. **Traders and Commission Agents:** Registered traders and commission agents can participate in buying and selling activities.
+3. **Buyers:** Wholesale buyers, processors, and exporters can also register to purchase agricultural commodities.
+
+**Documents Required:**
+1. **For Farmers:**
+   - Aadhar Card
+   - Land Ownership/Lease Documents
+   - Bank Account Details
+   - Passport-sized Photograph
+
+2. **For Traders and Buyers:**
+   - Business Registration Documents
+   - PAN Card
+   - Bank Account Details
+   - Passport-sized Photograph
+
+3. **For Commission Agents:**
+   - License from the Agricultural Produce Market Committee (APMC)
+   - PAN Card
+   - Bank Account Details
+   - Passport-sized Photograph
+
+It's important to note that the specific requirements and processes may vary slightly from state to state in India as e-NAM is implemented at the state level under the guidance of the central government. Farmers and other stakeholders are encouraged to check with their local APMC or e-NAM portal for detailed registration guidelines and requirements.

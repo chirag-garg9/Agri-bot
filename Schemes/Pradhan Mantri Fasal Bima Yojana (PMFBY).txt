@@ -1,0 +1,34 @@
+**Purpose:**
+The Pradhan Mantri Fasal Bima Yojana (PMFBY) is an Indian government-sponsored crop insurance scheme aimed at providing financial protection to farmers against crop losses due to natural calamities, pests, and diseases. It ensures that farmers do not face economic distress in the event of crop failure, thereby promoting agricultural stability.
+
+**Objective:**
+The primary objectives of PMFBY are as follows:
+1. To provide affordable crop insurance coverage to farmers.
+2. To mitigate the financial risks associated with crop losses.
+3. To encourage farmers to adopt modern agricultural practices and technologies.
+4. To safeguard the income and livelihoods of farmers.
+
+**Features:**
+- **Voluntary Participation:** Farmers can choose to participate in PMFBY voluntarily.
+- **Premium Subsidy:** The scheme offers a premium subsidy, with farmers paying only a nominal premium.
+- **Coverage:** PMFBY covers all food and oilseeds crops as well as horticultural crops. It also includes post-harvest losses.
+- **Seasonal Risks:** It covers risks arising from natural calamities like droughts, floods, cyclones, unseasonal rains, and pests/diseases.
+- **Financial Support:** In case of crop loss, farmers receive compensation equal to the insured sum.
+- **Digital Platform:** The scheme utilizes technology for quick assessment and disbursement of claims.
+- **Reinsurance:** To manage the financial burden, the government shares the risk with insurance companies through reinsurance.
+
+**Who are Eligible?:**
+Farmers, both individual and groups, are eligible for PMFBY. The following criteria apply:
+- The farmer must be the owner, tenant, or cultivator of the insured land.
+- Sharecroppers and tenant farmers are also eligible.
+- All farmers who avail of loans for notified crops from financial institutions are automatically covered under PMFBY.
+
+**Documents Required:**
+To enroll in PMFBY, farmers typically need the following documents:
+1. **Aadhar Card:** Proof of identity.
+2. **Land Ownership Documents:** Proof of ownership or tenancy of the cultivated land.
+3. **Bank Account Details:** To facilitate claim disbursement.
+4. **Cultivation Details:** Records related to the crops sown, area cultivated, and other agricultural practices.
+5. **Kisan Credit Card (KCC):** If availing of crop loans through KCC.
+
+It's important to note that the specific documentation requirements may vary by state or region, and farmers should check with their local agricultural authorities for precise information on enrolling in PMFBY.

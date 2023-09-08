@@ -1,0 +1,299 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - good morning
+    - good evening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: Inquire_schemes
+  examples: |
+    - Tell me about the [Agri Infrastructure Fund Scheme](scheme_name) please.
+    - Explain the [AIF- Scheme](scheme_name) to me.
+    - What are the details of [PMFME Scheme](scheme_name)?
+    - Can you provide information about [Gramin Bhandaran Yojana](scheme_name)?
+    - How does [Kisan Credit Card](scheme_name) work?
+    - [PMKSY](scheme_name) details, please.b
+    - Tell me about the [PM U–2013 KUSUM Scheme](scheme_name).
+    - I'd like to learn more about [Deendayal Antyodaya Yojana- National Urban Livelihoods Mission](scheme_name).
+    - Can you explain [Paramparagat Krishi Vikas Yojana (PKVY)](scheme_name)?
+    - What are the benefits of [Pradhan Mantri Fasal Bima Yojana (PMFBY)](scheme_name)?
+    - Please provide details of [PM Kisan Samman Nidhi Yojana](scheme_name).
+    - How can I apply for the [Micro Irrigation Fund scheme](scheme_name)?
+    - Tell me about the [E-NAM](scheme_name) platform.
+    - Explain the [National Mission For Sustainable Agriculture (NMSA)](scheme_name) to me.
+    - What's the eligibility criteria for [Prime Minister’s Employment Generation Programme](scheme_name)?
+    - [Animal Husbandry Infrastructure Development Fund (AHIDF)](scheme_name) details, please.
+    - How does the [Gramin Bhandaran Yojana](scheme_name) support farmers?
+    - I want to know more about [Pradhan Mantri Krishi Sinchai Yojana (PMKSY)](scheme_name).
+    - Can you provide information about [Kisan Credit Card (KCC)](scheme_name)?
+    - What is the purpose of the [Micro Irrigation Fund scheme](scheme_name)?
+    - How does the [PM U–2013 KUSUM Scheme](scheme_name) benefit farmers?
+    - I'm interested in [Deendayal Antyodaya Yojana- National Urban Livelihoods Mission](scheme_name). Tell me more.
+    - Explain the objectives of [Paramparagat Krishi Vikas Yojana (PKVY)](scheme_name).
+    - Are there any prerequisites for [Pradhan Mantri Fasal Bima Yojana (PMFBY)](scheme_name)?
+    - Can you guide me through the application process for [PM Kisan Samman Nidhi Yojana](scheme_name)?
+    - What are the success stories of the [Micro Irrigation Fund scheme](scheme_name)?
+    - Tell me about the coverage areas of [E-NAM](scheme_name).
+    - How can farmers benefit from [National Mission For Sustainable Agriculture (NMSA)](scheme_name)?
+    - Are there any specific sectors supported by [Prime Minister’s Employment Generation Programme](scheme_name)?
+    - What are the key initiatives under [Animal Husbandry Infrastructure Development Fund (AHIDF)](scheme_name)?
+    - Explain the key features of [Pradhan Mantri Krishi Sinchai Yojana (PMKSY)](scheme_name).
+    - How can I apply for a [Kisan Credit Card (KCC)](scheme_name)?
+    - Tell me about the success stories of farmers using [Kisan Credit Card (KCC)](scheme_name).
+    - How can farmers access the benefits of [Gramin Bhandaran Yojana](scheme_name)?
+    - Tell me about the [Agri Infrastructure Fund Scheme](scheme_name).
+    - Explain the [AIF- Scheme](scheme_name) to me.
+    - What are the details of [PMFME Scheme](scheme_name)?
+    - Can you provide information about [Gramin Bhandaran Yojana](scheme_name)?
+    - How does [Kisan Credit Card](scheme_name) work?
+    - [PMKSY](scheme_name) details, please.
+    - Tell me about the [PM U–2013 KUSUM Scheme](scheme_name).
+    - I'd like to learn more about [Deendayal Antyodaya Yojana- National Urban Livelihoods Mission](scheme_name).
+    - Can you explain [Paramparagat Krishi Vikas Yojana (PKVY)](scheme_name)?
+    - What are the benefits of [Pradhan Mantri Fasal Bima Yojana (PMFBY)](scheme_name)?
+    - Please provide details of [PM Kisan Samman Nidhi Yojana](scheme_name).
+    - How can I apply for the [Micro Irrigation Fund scheme](scheme_name)?
+    - Tell me about the [E-NAM](scheme_name) platform.
+    - Explain the [National Mission For Sustainable Agriculture (NMSA)](scheme_name) to me.
+    - What's the eligibility criteria for [Prime Minister’s Employment Generation Programme](scheme_name)?
+    - [Animal Husbandry Infrastructure Development Fund (AHIDF)](scheme_name) details, please.
+    - How does the [Gramin Bhandaran Yojana](scheme_name) support farmers?
+    - I want to know more about [Pradhan Mantri Krishi Sinchai Yojana (PMKSY)](scheme_name).
+    - Can you provide information about [Kisan Credit Card (KCC)](scheme_name)?
+    - What is the purpose of the [Micro Irrigation Fund scheme](scheme_name)?
+    - How does the [PM U–2013 KUSUM Scheme](scheme_name) benefit farmers?
+    - I'm interested in [Deendayal Antyodaya Yojana- National Urban Livelihoods Mission](scheme_name). Tell me more.
+    - Explain the objectives of [Paramparagat Krishi Vikas Yojana (PKVY)](scheme_name).
+    - Are there any prerequisites for [Pradhan Mantri Fasal Bima Yojana (PMFBY)](scheme_name)?
+    - Can you guide me through the application process for [PM Kisan Samman Nidhi Yojana](scheme_name)?
+    - What are the success stories of the [Micro Irrigation Fund scheme](scheme_name)?
+    - Tell me about the coverage areas of [E-NAM](scheme_name).
+    - How can farmers benefit from [National Mission For Sustainable Agriculture (NMSA)](scheme_name)?
+    - Are there any specific sectors supported by [Prime Minister’s Employment Generation Programme](scheme_name)?
+    - What are the key initiatives under [Animal Husbandry Infrastructure Development Fund (AHIDF)](scheme_name)?
+    - Explain the key features of [Pradhan Mantri Krishi Sinchai Yojana (PMKSY)](scheme_name).
+    - How can I apply for a [Kisan Credit Card (KCC)](scheme_name)?
+    - Tell me about the success stories of farmers using [Kisan Credit Card (KCC)](scheme_name).
+    - How can farmers access the benefits of [Gramin Bhandaran Yojana](scheme_name)?
+    - Tell me about the impact of [Pradhan Mantri Krishi Sinchai Yojana (PMKSY)](scheme_name).
+    - What are the key components of [Pradhan Mantri Fasal Bima Yojana (PMFBY)](scheme_name)?
+    - Can you provide information about [PM Kisan Samman Nidhi Yojana](scheme_name) registration?
+    - How is [E-NAM](scheme_name) transforming agricultural markets?
+    - Explain the eligibility criteria for [Prime Minister’s Employment Generation Programme](scheme_name).
+    - Are there any success stories related to [Animal Husbandry Infrastructure Development Fund (AHIDF)](scheme_name)?
+    - How can farmers benefit from [Micro Irrigation Fund scheme](scheme_name) investments?
+    - Tell me about the initiatives promoting sustainable agriculture under [National Mission For Sustainable Agriculture (NMSA)](scheme_name).
+    - What are the requirements for obtaining a [Kisan Credit Card (KCC)](scheme_name)?
+    - Share some case studies highlighting the impact of [Gramin Bhandaran Yojana](scheme_name).
+    - How can I participate in the [Agri Infrastructure Fund Scheme](scheme_name)?
+    - Tell me about the funding opportunities in [AIF- Scheme](scheme_name).
+    - What support is available for micro food processing enterprises under [PMFME Scheme](scheme_name)?
+    - Explain the solar pump installation process in [PM KUSUM Scheme](scheme_name).
+    - How does [Deendayal Antyodaya Yojana- National Urban Livelihoods Mission](scheme_name) empower urban livelihoods?
+    - Are there any success stories from entrepreneurs supported by [Prime Minister’s Employment Generation Programme](scheme_name)?
+    - Describe the irrigation infrastructure development under [Pradhan Mantri Krishi Sinchai Yojana (PMKSY)](scheme_name).
+    - What are the key organic farming initiatives in [Paramparagat Krishi Vikas Yojana (PKVY)](scheme_name)?
+    - Explain the claim settlement process in [Pradhan Mantri Fasal Bima Yojana (PMFBY)](scheme_name).
+    - Tell me about the warehousing facilities provided by [Gramin Bhandaran Yojana](scheme_name).
+    - What is the payment schedule for [PM Kisan Samman Nidhi Yojana](scheme_name)?
+    - How can farmers access funds through the [Micro Irrigation Fund scheme](scheme_name)?
+    - What are the key features of the [E-NAM](scheme_name) digital platform?
+    - How can I apply for a [Kisan Credit Card (KCC)](scheme_name) online?
+    - Describe the soil health management practices promoted by [National Mission For Sustainable Agriculture (NMSA)](scheme_name).
+    - Tell me about the renewable energy initiatives in [PM U–2013 KUSUM Scheme](scheme_name).
+    - Explain the credit facilities available under [Animal Husbandry Infrastructure Development Fund (AHIDF)](scheme_name).
+    - Share success stories of farmers benefiting from [PMKSY](scheme_name) irrigation projects.
+    - What are the market access benefits of [E-NAM](scheme_name)?
+    - Describe the role of women in entrepreneurship under [Prime Minister’s Employment Generation Programme](scheme_name).
+    - How does [Pradhan Mantri Fasal Bima Yojana (PMFBY)](scheme_name) handle crop losses?
+    - Explain the technology adoption initiatives in [PMKisan Samman Nidhi Yojana](scheme_name).
+    - How can I access affordable credit through [Kisan Credit Card (KCC)](scheme_name)?
+    - Tell me about the climate-smart agriculture practices promoted by [National Mission For Sustainable Agriculture (NMSA)](scheme_name).
+    - How can I apply for a [Kisan Credit Card (KCC)](scheme_name) online?
+    - What are the benefits of having a [Kisan Credit Card (KCC)](scheme_name)?
+    - Explain the eligibility criteria for obtaining a [Kisan Credit Card (KCC)](scheme_name).
+    - Tell me about the interest rates associated with [Kisan Credit Card (KCC)](scheme_name).
+    - What is the credit limit for farmers under [Kisan Credit Card (KCC)](scheme_name)?
+    - What are the key initiatives under [National Mission For Sustainable Agriculture (NMSA)](scheme_name)?
+    - Explain the soil health management practices promoted by [National Mission For Sustainable Agriculture (NMSA)](scheme_name).
+    - How does [NMSA](scheme_name) support climate-smart agriculture?
+    - Tell me about the funding opportunities provided by [NMSA](scheme_name).
+    - Share success stories of farmers benefiting from [NMSA](scheme_name).
+    - What are the key organic farming initiatives in [Paramparagat Krishi Vikas Yojana (PKVY)](scheme_name)?
+    - Explain the certification process for organic produce under [PKVY](scheme_name).
+    - How can farmers apply for assistance under [PKVY](scheme_name)?
+    - Tell me about the benefits of adopting organic farming practices through [PKVY](scheme_name).
+    - Share success stories of farmers transitioning to organic farming with the help of [PKVY](scheme_name).
+     - Explain the claim settlement process in [Pradhan Mantri Fasal Bima Yojana (PMFBY)](scheme_name).
+    - What are the premium rates for crop insurance under [PMFBY](scheme_name)?
+    - Tell me about the coverage and benefits of [PMFBY](scheme_name).
+    - How can farmers report crop losses to avail of the benefits of [PMFBY](scheme_name)?
+    - Share success stories of farmers who have benefited from [PMFBY](scheme_name).
+    - What are the funding opportunities available under [Animal Husbandry Infrastructure Development Fund (AHIDF)](scheme_name)?
+    - Explain the infrastructure development projects supported by [AHIDF](scheme_name).
+    - How can animal husbandry businesses apply for financial assistance through [AHIDF](scheme_name)?
+    - Tell me about the key features of [AHIDF](scheme_name).
+    - Share success stories of animal husbandry entrepreneurs supported by [AHIDF](scheme_name).
+    - Explain the objectives of [Pradhan Mantri Krishi Sinchai Yojana (PMKSY)](scheme_name).
+    - What are the key components of irrigation infrastructure in [PMKSY](scheme_name)?
+    - Tell me about the funding allocation for water resource management in [PMKSY](scheme_name).
+    - How can farmers benefit from water-efficient practices promoted by [PMKSY](scheme_name)?
+    - Share success stories of regions with improved irrigation facilities due to [PMKSY](scheme_name).
+
+
+- lookup: scheme_name
+  examples: |
+    - Agri Infrastructure Fund Scheme
+    - AIF- Scheme
+    - Animal Husbandry Infrastructure Development Fund
+    - AHIDF
+    - PM Formalization of Micro Food Processing Enterprises Scheme
+    - PMFME Scheme
+    - PM KUSUM Scheme
+    - Deendayal Antyodaya Yojana- National Urban Livelihoods Mission
+    - DAY- NULM
+    - Prime Minister’s Employment Generation Programme
+    - PMEGP
+    - Pradhan Mantri Krishi Sinchai Yojana
+    - PMKSY
+    - Paramparagat Krishi Vikas Yojana
+    - PKVY
+    - Pradhan Mantri Fasal Bima Yojana
+    - PMFBY
+    - Gramin Bhandaran Yojana
+    - PM Kisan Samman Nidhi Yojana
+    - Micro Irrigation Fund scheme
+    - E-NAM
+    - Kisan Credit Card
+    - KCC
+    - National Mission For Sustainable Agriculture
+    - NMSA
+
+
+- intent: Asking_Who_are_you
+  examples: |
+    -May I know your identity?
+    -Could you introduce yourself, please?
+    -Who am I speaking with?
+    -Can you tell me a bit about yourself?
+    -What's your name?
+    -Identify yourself, please.
+    -Who are you, exactly?
+    -May I ask who I'm talking to?
+    -What is your name and background?
+    -Tell me a little about who you are.
+    -Could you provide some information about yourself?
+    -I'm curious about your identity. Care to share?
+    -Please share your name and details.
+    -What should I call you?
+    -Can you clarify your identity for me?
+    -Let me get to know you a bit better.
+    -Who goes by this name?
+    -Could you shed some light on your background?
+    -What's your story?
+    -Introduce yourself, if you don't mind.
+
+- intent: Asking_capabilities
+  examples: |
+    -What assistance can you provide?
+    -How can you be of service?
+    -In what ways are you able to assist me?
+    -What support can I expect from you?
+    -How can you lend a hand?
+    -What can you do to aid me?
+    -How are you able to offer assistance?
+    -What resources do you have to help me?
+    -What can you offer to support me?
+    -What kind of help are you capable of providing?
+    -How might you be beneficial to me?
+    -In what manner can you contribute to my needs?
+    -How can you be of use to me?
+    -What can I count on you for?
+    -What ways are you able to be of help?
+    -How can you assist with my situation?
+    -What can you do to be supportive?
+    -How can you be a resource for me?
+    -What do you bring to the table in terms of assistance?
+    -What are your means for aiding me?
+
+
+- intent: asking_schemes
+  examples: |
+    -Could you describe various agricultural schemes?
+    -I'd like to hear about different agricultural programs. Can you share some?
+    -Please provide information on a variety of agricultural initiatives.
+    -Can you enlighten me about the different agricultural projects you're aware of?
+    -Share details about various agricultural plans, if you would.
+    -I'm interested in learning about the various agricultural schemes. Could you tell me more?
+    -Could you give me an overview of different agricultural programs?
+    -Tell me about the different agricultural schemes that exist.
+    -I'm curious about different agricultural initiatives. What can you tell me?
+    -Can you shed light on the various agricultural policies and programs in place?
+    -I'd appreciate it if you could discuss different agricultural schemes.
+    -Please elaborate on the different agricultural programs that are available.
+    -I'm looking to gather information about a range of agricultural schemes.
+    -Share your knowledge about various agricultural projects, please.
+    -Could you provide insights into the diversity of agricultural schemes?
+
+- intent: greatful
+  examples: |
+    - Thank You!
+    - Thanks!
+    - Thanks a lot!
+    - Thank you very much!
+    - Many thanks!
+    - Much appreciated!
+    - Thanks a million!
+    - I appreciate it!
+    - I'm grateful!
+    - Thanks a bunch!
+    - You're a lifesaver!
+    - I owe you one!
+    - I can't thank you enough!
+    - You've been so kind!
+    - I'm thankful for your help.
+    - I'm so grateful for this.
+    - You're too kind!
+    - Thanks a ton!
+    - I'm deeply thankful.
+    - You've been a big help!
+    - I'm indebted to you.
+
+  
+
+
+

@@ -1,0 +1,422 @@
+[
+  {
+    "text": "Can you explain Paramparagat Krishi Vikas Yojana (PKVY)?",
+    "entities": [
+      {
+        "start": 16,
+        "end": 55,
+        "value": "Paramparagat Krishi Vikas Yojana (PKVY)",
+        "entity": "scheme_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What are the benefits of Pradhan Mantri Fasal Bima Yojana (PMFBY)?",
+    "entities": [
+      {
+        "start": 25,
+        "end": 65,
+        "value": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+        "entity": "scheme_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Explain the National Mission For Sustainable Agriculture (NMSA) to me.",
+    "entities": [
+      {
+        "start": 12,
+        "end": 63,
+        "value": "National Mission For Sustainable Agriculture (NMSA)",
+        "entity": "scheme_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Animal Husbandry Infrastructure Development Fund (AHIDF) details, please.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 56,
+        "value": "Animal Husbandry Infrastructure Development Fund (AHIDF)",
+        "entity": "scheme_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I want to know more about Pradhan Mantri Krishi Sinchai Yojana (PMKSY).",
+    "entities": [
+      {
+        "start": 26,
+        "end": 70,
+        "value": "Pradhan Mantri Krishi Sinchai Yojana (PMKSY)",
+        "entity": "scheme_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Can you provide information about Kisan Credit Card (KCC)?",
+    "entities": [
+      {
+        "start": 34,
+        "end": 57,
+        "value": "Kisan Credit Card (KCC)",
+        "entity": "scheme_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Explain the objectives of Paramparagat Krishi Vikas Yojana (PKVY).",
+    "entities": [
+      {
+        "start": 26,
+        "end": 65,
+        "value": "Paramparagat Krishi Vikas Yojana (PKVY)",
+        "entity": "scheme_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Are there any prerequisites for Pradhan Mantri Fasal Bima Yojana (PMFBY)?",
+    "entities": [
+      {
+        "start": 32,
+        "end": 72,
+        "value": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+        "entity": "scheme_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How can farmers benefit from National Mission For Sustainable Agriculture (NMSA)?",
+    "entities": [
+      {
+        "start": 29,
+        "end": 80,
+        "value": "National Mission For Sustainable Agriculture (NMSA)",
+        "entity": "scheme_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What are the key initiatives under Animal Husbandry Infrastructure Development Fund (AHIDF)?",
+    "entities": [
+      {
+        "start": 35,
+        "end": 91,
+        "value": "Animal Husbandry Infrastructure Development Fund (AHIDF)",
+        "entity": "scheme_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Explain the key features of Pradhan Mantri Krishi Sinchai Yojana (PMKSY).",
+    "entities": [
+      {
+        "start": 28,
+        "end": 72,
+        "value": "Pradhan Mantri Krishi Sinchai Yojana (PMKSY)",
+        "entity": "scheme_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How can I apply for a Kisan Credit Card (KCC)?",
+    "entities": [
+      {
+        "start": 22,
+        "end": 45,
+        "value": "Kisan Credit Card (KCC)",
+        "entity": "scheme_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Tell me about the success stories of farmers using Kisan Credit Card (KCC).",
+    "entities": [
+      {
+        "start": 51,
+        "end": 74,
+        "value": "Kisan Credit Card (KCC)",
+        "entity": "scheme_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Tell me about the impact of Pradhan Mantri Krishi Sinchai Yojana (PMKSY).",
+    "entities": [
+      {
+        "start": 28,
+        "end": 72,
+        "value": "Pradhan Mantri Krishi Sinchai Yojana (PMKSY)",
+        "entity": "scheme_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What are the key components of Pradhan Mantri Fasal Bima Yojana (PMFBY)?",
+    "entities": [
+      {
+        "start": 31,
+        "end": 71,
+        "value": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+        "entity": "scheme_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Are there any success stories related to Animal Husbandry Infrastructure Development Fund (AHIDF)?",
+    "entities": [
+      {
+        "start": 41,
+        "end": 97,
+        "value": "Animal Husbandry Infrastructure Development Fund (AHIDF)",
+        "entity": "scheme_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Tell me about the initiatives promoting sustainable agriculture under National Mission For Sustainable Agriculture (NMSA).",
+    "entities": [
+      {
+        "start": 70,
+        "end": 121,
+        "value": "National Mission For Sustainable Agriculture (NMSA)",
+        "entity": "scheme_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What are the requirements for obtaining a Kisan Credit Card (KCC)?",
+    "entities": [
+      {
+        "start": 42,
+        "end": 65,
+        "value": "Kisan Credit Card (KCC)",
+        "entity": "scheme_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Describe the irrigation infrastructure development under Pradhan Mantri Krishi Sinchai Yojana (PMKSY).",
+    "entities": [
+      {
+        "start": 57,
+        "end": 101,
+        "value": "Pradhan Mantri Krishi Sinchai Yojana (PMKSY)",
+        "entity": "scheme_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What are the key organic farming initiatives in Paramparagat Krishi Vikas Yojana (PKVY)?",
+    "entities": [
+      {
+        "start": 48,
+        "end": 87,
+        "value": "Paramparagat Krishi Vikas Yojana (PKVY)",
+        "entity": "scheme_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Explain the claim settlement process in Pradhan Mantri Fasal Bima Yojana (PMFBY).",
+    "entities": [
+      {
+        "start": 40,
+        "end": 80,
+        "value": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+        "entity": "scheme_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How can I apply for a Kisan Credit Card (KCC) online?",
+    "entities": [
+      {
+        "start": 22,
+        "end": 45,
+        "value": "Kisan Credit Card (KCC)",
+        "entity": "scheme_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Describe the soil health management practices promoted by National Mission For Sustainable Agriculture (NMSA).",
+    "entities": [
+      {
+        "start": 58,
+        "end": 109,
+        "value": "National Mission For Sustainable Agriculture (NMSA)",
+        "entity": "scheme_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Explain the credit facilities available under Animal Husbandry Infrastructure Development Fund (AHIDF).",
+    "entities": [
+      {
+        "start": 46,
+        "end": 102,
+        "value": "Animal Husbandry Infrastructure Development Fund (AHIDF)",
+        "entity": "scheme_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How does Pradhan Mantri Fasal Bima Yojana (PMFBY) handle crop losses?",
+    "entities": [
+      {
+        "start": 9,
+        "end": 49,
+        "value": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+        "entity": "scheme_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How can I access affordable credit through Kisan Credit Card (KCC)?",
+    "entities": [
+      {
+        "start": 43,
+        "end": 66,
+        "value": "Kisan Credit Card (KCC)",
+        "entity": "scheme_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Tell me about the climate-smart agriculture practices promoted by National Mission For Sustainable Agriculture (NMSA).",
+    "entities": [
+      {
+        "start": 66,
+        "end": 117,
+        "value": "National Mission For Sustainable Agriculture (NMSA)",
+        "entity": "scheme_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What are the benefits of having a Kisan Credit Card (KCC)?",
+    "entities": [
+      {
+        "start": 34,
+        "end": 57,
+        "value": "Kisan Credit Card (KCC)",
+        "entity": "scheme_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Explain the eligibility criteria for obtaining a Kisan Credit Card (KCC).",
+    "entities": [
+      {
+        "start": 49,
+        "end": 72,
+        "value": "Kisan Credit Card (KCC)",
+        "entity": "scheme_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Tell me about the interest rates associated with Kisan Credit Card (KCC).",
+    "entities": [
+      {
+        "start": 49,
+        "end": 72,
+        "value": "Kisan Credit Card (KCC)",
+        "entity": "scheme_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What is the credit limit for farmers under Kisan Credit Card (KCC)?",
+    "entities": [
+      {
+        "start": 43,
+        "end": 66,
+        "value": "Kisan Credit Card (KCC)",
+        "entity": "scheme_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What are the key initiatives under National Mission For Sustainable Agriculture (NMSA)?",
+    "entities": [
+      {
+        "start": 35,
+        "end": 86,
+        "value": "National Mission For Sustainable Agriculture (NMSA)",
+        "entity": "scheme_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Explain the soil health management practices promoted by National Mission For Sustainable Agriculture (NMSA).",
+    "entities": [
+      {
+        "start": 57,
+        "end": 108,
+        "value": "National Mission For Sustainable Agriculture (NMSA)",
+        "entity": "scheme_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What are the funding opportunities available under Animal Husbandry Infrastructure Development Fund (AHIDF)?",
+    "entities": [
+      {
+        "start": 51,
+        "end": 107,
+        "value": "Animal Husbandry Infrastructure Development Fund (AHIDF)",
+        "entity": "scheme_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Explain the objectives of Pradhan Mantri Krishi Sinchai Yojana (PMKSY).",
+    "entities": [
+      {
+        "start": 26,
+        "end": 70,
+        "value": "Pradhan Mantri Krishi Sinchai Yojana (PMKSY)",
+        "entity": "scheme_name"
+      }
+    ],
+    "predicted_entities": []
+  }
+]
