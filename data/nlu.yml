@@ -1,4 +1,4 @@
-version: "3.1"
+version: "2.8"
 
 nlu:
 - intent: greet
@@ -293,7 +293,22 @@ nlu:
     - You've been a big help!
     - I'm indebted to you.
 
-  
-
-
-
+- intent: Telling about himself
+examples: |
+    - Hello, I'm John Smith, a seasoned farmer from the heart of Ruralville, Farmland. With more than 15 years of experience in agriculture, farming is not just a livelihood but a deep-rooted family tradition. I'm passionate about preserving our agricultural heritage and improving local farming practices. My purpose in applying for the Agri Infrastructure Fund Scheme is clear - to enhance the infrastructure on my farm. From implementing a modern irrigation system to building a cold storage facility and upgrading essential equipment, I aim to boost productivity and reduce post-harvest losses. These improvements won't just benefit my farm; they'll contribute to the growth of our entire farming community. Thank you for considering my application, and I'm eager to discuss how this opportunity can transform our local agriculture.
+    - Hi, I'm Maria Rodriguez, a dedicated farmer in the picturesque town of Green Acres. Farming has been my family's way of life for generations, and I'm committed to continuing this legacy. I'm applying for the Agri Infrastructure Fund Scheme to invest in sustainable farming practices. My goal is to establish eco-friendly irrigation systems, promote organic farming, and introduce renewable energy sources to reduce our carbon footprint. Together, we can foster a greener and more productive agricultural future.
+    - Greetings! I'm Rajesh Patel, a proud farmer in the vibrant community of Sunshine Fields. With a background in agribusiness, I understand the potential of modernizing our farms. My application for the Agri Infrastructure Fund Scheme focuses on mechanization and technology integration. I aim to introduce precision farming techniques, automated pest control systems, and real-time data analytics to optimize crop yields. Let's embrace innovation to ensure a bountiful harvest and sustainable agriculture.
+    - Hello there, I'm Sarah Thompson, a passionate farmer nestled in the serene countryside of Harvestville. My love for agriculture led me to explore ways to make farming more inclusive and accessible to all. Through the Agri Infrastructure Fund Scheme, I intend to develop community farming projects. These initiatives will provide training, resources, and land access to aspiring farmers, fostering a spirit of collaboration and ensuring food security for our town.
+    - Saludos! I'm Carlos Gutierrez, a hardworking farmer in the beautiful landscapes of Green Valley. My connection to the land runs deep, and I'm committed to sustainable farming practices. With the Agri Infrastructure Fund Scheme, I'm eager to implement renewable energy solutions such as solar-powered irrigation and create a farm-to-table distribution network. By reducing our environmental impact and enhancing local food supply chains, we can nourish both our land and community.
+    - Hi, I'm Emily Anderson, an enthusiastic farmer from the tranquil outskirts of Bloomfield Meadows. My journey in agriculture has been driven by a passion for organic farming and biodiversity conservation. With the Agri Infrastructure Fund Scheme, I'm planning to establish a sustainable agro-ecology center. This center will serve as an educational hub for farmers, promoting eco-friendly practices, crop diversification, and the preservation of our precious ecosystems.
+    - I am an experienced livestock farmer with a strong commitment to improving animal husbandry practices. My application for AHIDF seeks to revamp and modernize our farm's infrastructure. With these funds, I plan to build state-of-the-art cattle sheds and install advanced milking equipment to enhance the well-being and productivity of our livestock.
+    - As the owner of a small-scale food processing unit, I am keen to expand my operations and comply with industry standards. My application for the PMFME Scheme aims to access financial support to upgrade our food processing facilities, ensuring food safety and quality for our consumers.
+    - Being a progressive farmer, I understand the importance of renewable energy in agriculture. My application for PM KUSUM seeks assistance to install solar pumps on my farm, reducing energy costs and supporting sustainable farming practices.
+    - I am a motivated entrepreneur from an urban area, aspiring to start a small business. My application for DAY-NULM seeks financial support and training to establish a micro-enterprise, providing livelihood opportunities for myself and other members of my community.
+    - As a young and ambitious individual, I am eager to become a self-reliant entrepreneur. My application for PMEGP aims to secure funding for my startup idea, which focuses on manufacturing eco-friendly products. I believe this initiative will not only create employment but also contribute to environmental sustainability.
+    - I am a dedicated farmer who understands the significance of efficient irrigation techniques. My application for PMKSY aims to implement modern irrigation systems on my farm, ensuring optimal water usage and increased crop yields.
+    - With a deep respect for traditional farming practices and the environment, my application for PKVY seeks support to transition my farm to organic farming methods. I believe this initiative will improve soil health and promote sustainable agriculture.
+    - As a farmer who faces the uncertainties of climate change, I am applying for PMFBY to protect my crops and livelihood. This crop insurance scheme will provide the much-needed financial security in case of crop losses due to unforeseen events.
+    - Recognizing the need for better storage infrastructure in rural areas, I am applying for the Gramin Bhandaran Yojana. This initiative will help me construct proper storage facilities, reducing post-harvest losses and ensuring better income for my fellow farmers.
+    - As a smallholder farmer, I greatly value the support provided by the government through the PM Kisan Samman Nidhi Yojana. My application seeks to ensure that I receive the benefits of this income support scheme, which will aid in meeting my farming expenses and improving agricultural productivity.
+    
